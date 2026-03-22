@@ -805,12 +805,58 @@ a:hover {
         padding: 28px 24px;
     }
 
+    .hero-content {
+        text-align: center;
+    }
+
+    .hero-description {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
     .hero-cta {
         flex-direction: column;
+        align-items: center;
     }
 
     .btn {
         text-align: center;
+    }
+
+    .section-title {
+        display: block;
+        text-align: center;
+    }
+
+    .section-title::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .section-subtitle {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .about-text p {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .contact-content {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .contact-form {
+        text-align: left;
+    }
+
+    .contact-links {
+        justify-content: center;
     }
 }
 
