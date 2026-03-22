@@ -41,9 +41,29 @@ document.querySelectorAll('.section, .project-card, .skill-category, .timeline-i
     observer.observe(el);
 });
 
-// Contact form - disable button while submitting to prevent double-submit
-document.getElementById('contact-form').addEventListener('submit', () => {
-    const btn = document.querySelector('#contact-form button[type="submit"]');
+// Contact form - submit via AJAX to stay on page
+document.getElementById('contact-form').addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const form = e.target;
+    const btn = form.querySelector('button[type="submit"]');
     btn.textContent = 'Sending...';
     btn.disabled = true;
+
+    try {
+        const response = await fetch(form.action, {
+            method: 'POST',
+            body: new FormData(form),
+        });
+        const data = await response.json();
+        if (data.success) {
+            btn.textContent = 'Sent!';
+            form.reset();
+        } else {
+            btn.textContent = 'Failed — try again';
+            btn.disabled = false;
+        }
+    } catch {
+        btn.textContent = 'Failed — try again';
+        btn.disabled = false;
+    }
 });
