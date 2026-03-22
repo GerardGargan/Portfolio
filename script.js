@@ -42,7 +42,8 @@ document.querySelectorAll('.section, .project-card, .skill-category, .timeline-i
 });
 
 // Contact form - submit via AJAX to stay on page
-document.getElementById('contact-form').addEventListener('submit', async (e) => {
+const contactForm = document.getElementById('contact-form');
+if (contactForm) contactForm.addEventListener('submit', async (e) => {
     e.preventDefault();
     const form = e.target;
     const btn = form.querySelector('button[type="submit"]');

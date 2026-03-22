@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contrast Revival | Gerard Gargan</title>
+    <meta
+      name="description"
+      content="Automated booking and smart lock integration for Contrast Revival — a fully self-service operation running for ~£5/month."
+    />
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect rx='16' width='100' height='100' fill='%230f172a'/><text x='50' y='68' font-family='system-ui' font-size='48' font-weight='700' fill='%2338bdf8' text-anchor='middle'>GG</text></svg>" />
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <nav class="navbar" id="navbar">
+      <div class="container nav-content">
+        <a href="../index.html#hero" class="nav-logo">GG</a>
+        <button
+          class="nav-toggle"
+          id="nav-toggle"
+          aria-label="Toggle navigation"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="../index.html#about">About</a></li>
+          <li><a href="../index.html#skills">Skills</a></li>
+          <li><a href="../index.html#projects">Projects</a></li>
+          <li><a href="../index.html#experience">Experience</a></li>
+          <li><a href="../index.html#contact">Contact</a></li>
+          <li>
+            <a href="https://github.com/GerardGargan" target="_blank" rel="noopener noreferrer" class="nav-github" aria-label="GitHub">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <section class="section project-detail">
+      <div class="container">
+        <a href="../index.html#projects" class="back-link">&larr; Back to Projects</a>
+
+        <div class="project-detail-header">
+          <h1>Contrast Revival</h1>
+          <p class="project-subtitle">Automated Booking &amp; Smart Lock Integration</p>
+          <div class="project-tags">
+            <span>C# / .NET</span>
+            <span>Azure Container Apps</span>
+            <span>Webhooks</span>
+            <span>Nuki API</span>
+          </div>
+        </div>
+
+        <div class="project-detail-image">
+          <img
+            src="../images/contrast-revival.png"
+            alt="Contrast Revival Recovery Suite website"
+          />
+        </div>
+
+        <div class="project-detail-body">
+          <h2>The Problem</h2>
+          <p>
+            A small business had an online booking system and a smart lock on their premises &mdash; but the two couldn't talk to each other. Every booking required someone to manually grant access, which meant staff had to be on-site during operating hours just to let customers in. It limited when the business could operate and how many bookings they could take.
+          </p>
+
+          <h2>The Solution</h2>
+          <p>
+            I built an app that connects the booking system to the smart lock on the premises. When a customer books, the system automatically generates a time-limited access code for the door and emails it ahead of their appointment &mdash; no manual steps, no staff involvement.
+          </p>
+
+          <h2>The Impact</h2>
+          <p>
+            The business moved to a fully self-service model &mdash; no staff needed on-site to let customers in. This opened up longer operating hours and increased booking capacity without any additional overhead. Deployed on Azure Container Apps with auto-scaling, the entire system runs for approximately &pound;5 per month, making the move to self-service practically cost-free.
+          </p>
+        </div>
+
+        <div class="project-detail-links">
+          <a
+            href="https://www.contrast-revival.com/"
+            class="btn btn-primary"
+            target="_blank"
+            rel="noopener noreferrer"
+          >Visit Client Website &rarr;</a>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <p>&copy; 2026 Gerard Gargan. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="../script.js"></script>
+  </body>
+</html>

@@ -727,6 +727,80 @@ a:hover {
     color: var(--color-primary);
 }
 
+/* Project Detail Pages */
+.project-detail {
+    padding-top: 140px;
+}
+
+.back-link {
+    display: inline-block;
+    color: var(--color-text-muted);
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin-bottom: 32px;
+    transition: color 0.2s, gap 0.2s;
+}
+
+.back-link:hover {
+    color: var(--color-primary);
+}
+
+.project-detail-header {
+    margin-bottom: 40px;
+}
+
+.project-detail-header h1 {
+    font-size: clamp(1.8rem, 4vw, 2.5rem);
+    font-weight: 700;
+    color: #f8fafc;
+    margin-bottom: 8px;
+    line-height: 1.2;
+}
+
+.project-detail-header .project-subtitle {
+    margin-bottom: 20px;
+}
+
+.project-detail-image {
+    margin-bottom: 40px;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid var(--color-border);
+}
+
+.project-detail-image img {
+    width: 100%;
+    display: block;
+}
+
+.project-detail-body {
+    max-width: 720px;
+    margin-bottom: 40px;
+}
+
+.project-detail-body h2 {
+    font-size: 1.3rem;
+    color: var(--color-primary);
+    margin-bottom: 12px;
+    margin-top: 32px;
+    font-weight: 600;
+}
+
+.project-detail-body h2:first-child {
+    margin-top: 0;
+}
+
+.project-detail-body p {
+    color: var(--color-text-muted);
+    font-size: 1rem;
+    line-height: 1.8;
+    margin-bottom: 16px;
+}
+
+.project-detail-links {
+    padding-top: 8px;
+}
+
 /* Footer */
 .footer {
     padding: 32px 0;

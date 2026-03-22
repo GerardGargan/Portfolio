@@ -187,27 +187,8 @@
               <p class="project-subtitle">
                 Automated Booking &amp; Smart Lock Integration
               </p>
-              <p class="project-story">
-                <strong>The problem:</strong> A small business had an online
-                booking system and a smart lock on their premises — but the two
-                couldn't talk to each other. Every booking required manual
-                intervention to grant access, tying up staff time and limiting
-                operating hours.
-              </p>
-              <p class="project-story">
-                <strong>The solution:</strong> I built a middleware application
-                that listens for webhooks from the booking system, automatically
-                generates time-limited 6-digit access codes via the Nuki smart
-                lock API, and emails them to customers ahead of their
-                appointment.
-              </p>
-              <p class="project-story">
-                <strong>The impact:</strong> The business transformed into a
-                fully self-service operation — no staff needed on-site to let
-                customers in. By deploying on Azure Container Apps with
-                auto-scaling, the entire system runs for approximately &pound;5
-                per month, making the move to self-service practically
-                cost-free.
+              <p>
+                I helped a small business move to a fully self-service model by building an app that connects their booking system to a smart lock on their premises. When a customer books, the system automatically generates a time-limited access code for the door and emails it ahead of their appointment. The result: longer operating hours, more booking capacity, and no staff needed on-site to let customers in &mdash; all for ~&pound;5/month.
               </p>
               <div class="project-tags">
                 <span>C# / .NET</span>
@@ -216,13 +197,7 @@
                 <span>Nuki API</span>
               </div>
               <div class="project-links">
-                <a
-                  href="https://www.contrast-revival.com/"
-                  class="project-link"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  >Client Website &rarr;</a
-                >
+                <a href="projects/contrast-revival.html" class="project-link">Read more &rarr;</a>
               </div>
             </div>
           </div>
@@ -232,12 +207,10 @@
                 <h3>SopPro</h3>
                 <p class="project-subtitle">SOP Management Mobile App</p>
                 <p>
-                  Businesses lose hours writing, updating, and chasing
-                  approvals on standard operating procedures. SopPro is a
-                  mobile app that streamlines the entire process &mdash; from
-                  AI-assisted drafting to review workflows and PDF export
-                  &mdash; so teams can focus on the work instead of the
-                  paperwork.
+                  Most businesses still create standard operating procedures in Word or Excel &mdash; formatting is inconsistent, version control is manual, and getting approvals means chasing people over email. Worse, the people who know the job best often aren't the ones writing the SOPs, because the software gets in their way.
+                </p>
+                <p>
+                  I built a user-friendly mobile app that lets teams create SOPs at the point of use, with AI-assisted drafting, built-in approval workflows, automatic version control, and one-tap PDF export in a standardised layout.
                 </p>
                 <div class="project-tags">
                   <span>React Native</span>
@@ -246,13 +219,7 @@
                   <span>Redux</span>
                 </div>
                 <div class="project-links">
-                  <a
-                    href="https://github.com/GerardGargan/SopPro"
-                    class="project-link"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    >Source Code &rarr;</a
-                  >
+                  <a href="projects/soppro.html" class="project-link">Read more &rarr;</a>
                 </div>
               </div>
             </div>
@@ -261,11 +228,7 @@
                 <h3>AI-Powered Image Generation App</h3>
                 <p class="project-subtitle">Kev-In — Personal Project</p>
                 <p>
-                  A web app that generates personalised movie posters using AI
-                  image generation. Users upload a photo, pick a movie, and
-                  receive a custom poster starring themselves &mdash; all
-                  processed in real time. Built to explore the practical side
-                  of integrating AI into user-facing products.
+                  A fun personal project built around Christmas &mdash; a web app that lets you upload a photo, pick your favourite Christmas movie, and get a custom poster starring yourself, generated by AI in real time. It got a lot of traction while it was live, with users sharing their generated posters across LinkedIn and social media.
                 </p>
                 <div class="project-tags">
                   <span>Next.js</span>
@@ -274,50 +237,26 @@
                   <span>AI Generation</span>
                 </div>
                 <div class="project-links">
-                  <a
-                    href="https://github.com/GerardGargan/kev-in"
-                    class="project-link"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    >Source Code &rarr;</a
-                  >
+                  <a href="projects/kev-in.html" class="project-link">Read more &rarr;</a>
                 </div>
               </div>
             </div>
           </div>
           <div class="project-card featured">
             <div class="project-info">
-              <h3>Automated Data Validation</h3>
-              <p class="project-subtitle">Automated Data Validation Tool</p>
-              <p class="project-story">
-                <strong>The problem:</strong> Every month, 72 global sites
-                submitted data to a collection system that fed audited
-                investor reports for a publicly traded company. Validating
-                it was entirely manual &mdash; exporting reports, copying
-                into analysis spreadsheets, cross-checking every tab, then
-                chasing corrections under tight deadlines. It consumed two
-                full days every cycle.
-              </p>
-              <p class="project-story">
-                <strong>The solution:</strong> I built a desktop application
-                that pulls data directly from the collection system&rsquo;s
-                API, runs every validation automatically through a simple
-                menu, writes flagged issues to a formatted Excel report, and
-                can email corrections to sites in one click &mdash;
-                eliminating the manual export-copy-check loop entirely.
-              </p>
-              <p class="project-story">
-                <strong>The impact:</strong> Monthly validation dropped from
-                ~16 hours to under one. The process can now be repeated as
-                often as needed without added effort, and the structured
-                output removed the risk of human error in a
-                compliance-critical workflow.
+              <h3>Monthly Data Validation Tool</h3>
+              <p class="project-subtitle">Automated Data Validation</p>
+              <p>
+                Every month, data from 72 global sites had to be validated before feeding into audited investor reports for a publicly traded company. The process was entirely manual &mdash; exporting, cross-checking, and chasing corrections &mdash; taking around two days each cycle. I built a desktop app that pulls the data, runs all validations automatically, and generates a formatted report of flagged issues. What took two days now takes under an hour, and can be repeated as often as needed with zero extra effort.
               </p>
               <div class="project-tags">
                 <span>C#</span>
                 <span>.NET</span>
                 <span>REST API</span>
                 <span>Excel Automation</span>
+              </div>
+              <div class="project-links">
+                <a href="projects/data-validation.html" class="project-link">Read more &rarr;</a>
               </div>
             </div>
           </div>
