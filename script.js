@@ -36,7 +36,7 @@ const observer = new IntersectionObserver((entries) => {
 }, observerOptions);
 
 // Apply fade-in to sections and cards
-document.querySelectorAll('.section, .project-card, .skill-category, .timeline-item').forEach(el => {
+document.querySelectorAll('.section, .project-card, .skill-category, .timeline-item, .testimonial-card').forEach(el => {
     el.classList.add('fade-in');
     observer.observe(el);
 });

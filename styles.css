@@ -578,6 +578,64 @@ a:hover {
     gap: 32px;
 }
 
+/* Testimonials */
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 32px;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.testimonial-card {
+    background: var(--color-card);
+    border: 1px solid var(--color-border);
+    border-radius: 16px;
+    padding: 40px;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-4px);
+    border-color: var(--color-primary);
+    box-shadow: 0 8px 32px rgba(56, 189, 248, 0.08);
+}
+
+.testimonial-quote-icon {
+    font-size: 1.5rem;
+    color: var(--color-primary);
+    opacity: 0.6;
+    margin-bottom: 16px;
+    display: block;
+}
+
+.testimonial-text {
+    font-style: italic;
+    color: var(--color-text-muted);
+    font-size: 1.05rem;
+    line-height: 1.75;
+    margin-bottom: 24px;
+}
+
+.testimonial-author {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.testimonial-name {
+    color: var(--color-primary);
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.testimonial-role {
+    color: var(--color-text-muted);
+    font-size: 0.875rem;
+    font-family: 'SF Mono', 'Fira Code', monospace;
+}
+
 /* Experience / Timeline */
 .timeline {
     position: relative;
