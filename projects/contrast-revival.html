@@ -1,18 +1,35 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="no-js">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contrast Revival | Gerard Gargan</title>
+    <title>Contrast Revival Case Study | Gerard Gargan</title>
     <meta
       name="description"
-      content="Automated booking and smart lock integration for Contrast Revival — a fully self-service operation running for ~£5/month."
+      content="How a booking system wired to a smart lock let a Belfast recovery suite move to a fully self-service model — for about £5 a month."
     />
+    <meta
+      property="og:title"
+      content="Contrast Revival Case Study | Gerard Gargan"
+    />
+    <meta
+      property="og:description"
+      content="How a booking system wired to a smart lock let a Belfast recovery suite move to a fully self-service model — for about £5 a month."
+    />
+    <meta name="theme-color" content="#0a0e14" />
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32.png" />
+    <link rel="icon" type="image/png" sizes="512x512" href="../images/favicon-512.png" />
+    <link rel="apple-touch-icon" href="../images/apple-touch-icon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      rel="icon"
-      href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect rx='16' width='100' height='100' fill='%230f172a'/><text x='50' y='68' font-family='system-ui' font-size='48' font-weight='700' fill='%2338bdf8' text-anchor='middle'>GG</text></svg>"
+      href="https://fonts.googleapis.com/css2?family=Archivo:wght@400..800&family=Instrument+Sans:wght@400;500;600&display=swap"
+      rel="stylesheet"
     />
     <link rel="stylesheet" href="../styles.css" />
+    <script>
+      document.documentElement.classList.replace("no-js", "js");
+    </script>
     <script
       async
       src="https://www.googletagmanager.com/gtag/js?id=G-0M7Z0N829Z"
@@ -28,122 +45,217 @@
     </script>
   </head>
   <body>
-    <nav class="navbar" id="navbar">
-      <div class="container nav-content">
-        <a href="../index.html#hero" class="nav-logo">GG</a>
-        <button
-          class="nav-toggle"
-          id="nav-toggle"
-          aria-label="Toggle navigation"
-        >
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
-        <ul class="nav-links" id="nav-links">
-          <li><a href="../index.html#about">About</a></li>
-          <li><a href="../index.html#how-i-work">How I Work</a></li>
-          <li><a href="../index.html#projects">Projects</a></li>
-          <li><a href="../index.html#testimonials">What People Say</a></li>
-          <li><a href="../index.html#contact">Contact</a></li>
-          <li>
-            <a
-              href="https://github.com/GerardGargan"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="nav-github"
-              aria-label="GitHub"
-            >
-              <svg
-                width="22"
-                height="22"
-                viewBox="0 0 24 24"
-                fill="currentColor"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"
-                />
-              </svg>
-            </a>
-          </li>
-        </ul>
+    <nav class="navbar">
+      <div class="container nav-inner">
+        <a href="../index.html" class="nav-brand">Gerard Gargan</a>
+        <div class="nav-links">
+          <a href="../index.html#how-i-help">How I help</a>
+          <a href="../index.html#work">Work</a>
+          <a href="../index.html#about">About</a>
+          <a href="../index.html#contact">Contact</a>
+          <a href="../index.html#contact" class="btn btn-nav">Book a free call</a>
+        </div>
+        <div class="nav-actions">
+          <a href="../index.html#contact" class="nav-cta-mobile">Book a call</a>
+          <button
+            class="nav-toggle"
+            id="nav-toggle"
+            aria-label="Toggle navigation"
+            aria-expanded="false"
+            aria-controls="nav-menu"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+      <div class="nav-menu" id="nav-menu">
+        <a href="../index.html#how-i-help">How I help</a>
+        <a href="../index.html#work">Work</a>
+        <a href="../index.html#about">About</a>
+        <a href="../index.html#contact">Contact</a>
       </div>
     </nav>
 
-    <section class="section project-detail">
+    <div class="cs-band">
       <div class="container">
-        <a href="../index.html#projects" class="back-link"
-          >&larr; Back to Projects</a
-        >
-
-        <div class="project-detail-header">
-          <h1>Contrast Revival</h1>
-          <p class="project-subtitle">
-            Automated Booking &amp; Smart Lock Integration
+        <header class="cs-header">
+          <a href="../index.html#work" class="cs-back">&larr; All work</a>
+          <div class="cs-kicker">Case study &middot; Contrast Revival</div>
+          <h1>A recovery suite that opens the door for itself.</h1>
+          <p class="cs-lead">
+            How a booking system wired to a smart lock let a Belfast recovery
+            suite move to a fully self-service model &mdash; longer hours and
+            more capacity, without anyone needing to be on site.
           </p>
-          <div class="project-tags">
-            <span>C# / .NET</span>
-            <span>Azure Container Apps</span>
-            <span>Webhooks</span>
-            <span>Nuki API</span>
+        </header>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="cs-facts">
+        <div>
+          <div class="cs-fact-label">Client</div>
+          <div class="cs-fact-value">Contrast Revival, recovery suite</div>
+        </div>
+        <div>
+          <div class="cs-fact-label">The work</div>
+          <div class="cs-fact-value">Booking &amp; smart lock integration</div>
+        </div>
+        <div>
+          <div class="cs-fact-label">Built with</div>
+          <div class="cs-fact-value">
+            C# / .NET &middot; Azure &middot; Nuki API
           </div>
         </div>
-
-        <div class="project-detail-image">
-          <img
-            src="../images/contrast-revival.png"
-            alt="Contrast Revival Recovery Suite website"
-          />
-        </div>
-
-        <div class="project-detail-body">
-          <h2>The Problem</h2>
-          <p>
-            A small business had an online booking system and a smart lock on
-            their premises &mdash; but the two couldn't talk to each other.
-            Every booking required someone to manually grant access, which meant
-            staff had to be on-site during operating hours just to let customers
-            in. It limited when the business could operate and how many bookings
-            they could take.
-          </p>
-
-          <h2>The Solution</h2>
-          <p>
-            I built an app that connects the booking system to the smart lock on
-            the premises. When a customer books, the system automatically
-            generates a time-limited access code for the door and emails it
-            ahead of their appointment &mdash; no manual steps, no staff
-            involvement.
-          </p>
-
-          <h2>The Impact</h2>
-          <p>
-            The business moved to a fully self-service model &mdash; no staff
-            needed on-site to let customers in. This opened up longer operating
-            hours and increased booking capacity without any additional
-            overhead. Deployed on Azure Container Apps with auto-scaling, the
-            entire system runs for approximately &pound;5 per month, making the
-            move to self-service practically cost-free.
-          </p>
-        </div>
-
-        <div class="project-detail-links">
-          <a
-            href="https://www.contrast-revival.com/"
-            class="btn btn-primary"
-            target="_blank"
-            rel="noopener noreferrer"
-            >Visit Client Website &rarr;</a
-          >
+        <div>
+          <div class="cs-fact-label">Running cost</div>
+          <div class="cs-fact-value accent">~&pound;5 a month</div>
         </div>
       </div>
-    </section>
+
+      <img
+        src="../images/contrast-revival-suite.webp"
+        alt="The Contrast Revival sauna room"
+        class="cs-hero-img"
+      />
+
+      <section class="cs-block">
+        <h2>The problem</h2>
+        <div>
+          <p>
+            Every session meant someone travelling to the premises just to
+            unlock the door. Opening hours were capped by when staff could
+            physically be there &mdash; and every extra hour of cover was an
+            extra cost for a small, growing business.
+          </p>
+          <p>
+            The bookings were already coming in online. The door was the only
+            thing standing between the business and a self-service model.
+          </p>
+        </div>
+      </section>
+
+      <section class="cs-solution">
+        <div class="cs-block">
+          <h2>What I built</h2>
+          <p>
+            A small, reliable app that connects the booking system to the smart
+            lock on the front door. It runs quietly in the cloud on Azure
+            &mdash; no server to look after, and running costs of about
+            &pound;5 a month.
+          </p>
+        </div>
+        <div class="cs-steps fade-group">
+          <div class="cs-step fade-item" style="--d: 0.1s">
+            <div class="cs-step-num">1</div>
+            <div class="cs-step-title">A customer books</div>
+            <div class="cs-step-body">
+              The booking system fires a webhook the moment a slot is paid for.
+            </div>
+          </div>
+          <div class="cs-step fade-item" style="--d: 0.25s">
+            <div class="cs-step-num">2</div>
+            <div class="cs-step-title">A door code is created</div>
+            <div class="cs-step-body">
+              The app generates a unique code on the smart lock, valid only
+              around the appointment time.
+            </div>
+          </div>
+          <div class="cs-step fade-item" style="--d: 0.4s">
+            <div class="cs-step-num">3</div>
+            <div class="cs-step-title">The customer gets it</div>
+            <div class="cs-step-body">
+              The code is emailed automatically ahead of their session, with
+              everything they need to know.
+            </div>
+          </div>
+          <div class="cs-step fade-item" style="--d: 0.55s">
+            <div class="cs-step-num">4</div>
+            <div class="cs-step-title">They let themselves in</div>
+            <div class="cs-step-body">
+              The code works for their window, then expires on its own. No keys,
+              no handovers, no staff.
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="cs-photos">
+        <img
+          src="../images/contrast-revival-sauna.webp"
+          alt="Customers in the Contrast Revival sauna"
+        />
+        <img
+          src="../images/contrast-revival-interior.webp"
+          alt="Train hard, recover harder — inside Contrast Revival"
+        />
+      </div>
+
+      <section class="cs-block cs-result">
+        <h2>The result</h2>
+        <div>
+          <p>
+            Contrast Revival now runs as a fully self-service operation.
+            Sessions can be offered well beyond staffed hours, capacity is no
+            longer tied to someone's availability, and the whole system costs
+            about the price of a coffee each month to run.
+          </p>
+          <div class="cs-pills">
+            <span class="pill">Longer operating hours</span>
+            <span class="pill">More booking capacity</span>
+            <span class="pill">No staff needed on site</span>
+            <span class="pill">~&pound;5/month to run</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="cs-testimonial">
+        <blockquote>
+          &ldquo;Gerard provided an excellent service from start to finish.
+          After I presented the problem, he quickly identified the best solution
+          and implemented it seamlessly. He was a pleasure to work with, highly
+          knowledgeable, and always mindful of costs to ensure the solution was
+          both practical and cost-effective. I would highly recommend his
+          services.&rdquo;
+        </blockquote>
+        <cite>William Beckett &mdash; owner, Contrast Revival</cite>
+      </section>
+
+      <section class="cs-cta">
+        <h2>Got a job like this eating your week?</h2>
+        <p>
+          Tell me what's slowing your business down &mdash; I'll come back
+          within a day.
+        </p>
+        <a href="../index.html#contact" class="btn btn-primary"
+          >Book a free call</a
+        >
+      </section>
+    </div>
 
     <footer class="footer">
-      <div class="container">
-        <p class="footer-location">Based in Belfast, Northern Ireland. Working with clients across the UK and Ireland.</p>
-        <p>&copy; 2026 Gerard Gargan. All rights reserved.</p>
+      <div class="container footer-inner">
+        <span>&copy; 2026 Gerard Gargan</span>
+        <span
+          >Custom software for small businesses &middot; Belfast, Northern
+          Ireland</span
+        >
+        <span class="footer-social">
+          <a
+            href="https://www.linkedin.com/in/gerard-gargan/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >LinkedIn</a
+          >
+          <a
+            href="https://github.com/GerardGargan"
+            target="_blank"
+            rel="noopener noreferrer"
+            >GitHub</a
+          >
+        </span>
       </div>
     </footer>
 

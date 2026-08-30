@@ -1,45 +1,32 @@
-// Navbar scroll effect
-const navbar = document.getElementById('navbar');
-
-window.addEventListener('scroll', () => {
-    navbar.classList.toggle('scrolled', window.scrollY > 50);
-});
-
 // Mobile nav toggle
 const navToggle = document.getElementById('nav-toggle');
-const navLinks = document.getElementById('nav-links');
+const navMenu = document.getElementById('nav-menu');
 
-navToggle.addEventListener('click', () => {
-    navLinks.classList.toggle('active');
-});
-
-// Close mobile nav on link click
-navLinks.querySelectorAll('a').forEach(link => {
-    link.addEventListener('click', () => {
-        navLinks.classList.remove('active');
+if (navToggle && navMenu) {
+    navToggle.addEventListener('click', () => {
+        const open = navMenu.classList.toggle('open');
+        navToggle.setAttribute('aria-expanded', open);
     });
-});
 
-// Fade-in on scroll
-const observerOptions = {
-    threshold: 0.15,
-    rootMargin: '0px 0px -50px 0px'
-};
+    navMenu.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+            navMenu.classList.remove('open');
+            navToggle.setAttribute('aria-expanded', 'false');
+        });
+    });
+}
 
-const observer = new IntersectionObserver((entries) => {
+// Staggered fade-in when a group scrolls into view
+const fadeObserver = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
-            entry.target.classList.add('visible');
-            observer.unobserve(entry.target);
+            entry.target.classList.add('in-view');
+            fadeObserver.unobserve(entry.target);
         }
     });
-}, observerOptions);
+}, { threshold: 0.25 });
 
-// Apply fade-in to sections and cards
-document.querySelectorAll('.section, .project-card, .skill-category, .timeline-item, .testimonial-card').forEach(el => {
-    el.classList.add('fade-in');
-    observer.observe(el);
-});
+document.querySelectorAll('.fade-group').forEach(el => fadeObserver.observe(el));
 
 // Contact form - submit via AJAX to stay on page
 const contactForm = document.getElementById('contact-form');
